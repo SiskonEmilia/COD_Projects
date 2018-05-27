@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/ALU.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/CU.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/DM.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/IM.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/PC.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/RF.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/SZE.v" \
+"../../../../Single_Cycle_CPU_Basys3.srcs/new/Single_Cycle_CPU_Basys3.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

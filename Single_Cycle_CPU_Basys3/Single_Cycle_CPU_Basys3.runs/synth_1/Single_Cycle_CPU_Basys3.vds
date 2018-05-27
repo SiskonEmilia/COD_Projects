@@ -1,0 +1,755 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun May 27 23:00:59 2018
+# Process ID: 11648
+# Current directory: D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.runs/synth_1
+# Command line: vivado.exe -log Single_Cycle_CPU_Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Single_Cycle_CPU_Basys3.tcl
+# Log file: D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.runs/synth_1/Single_Cycle_CPU_Basys3.vds
+# Journal file: D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Single_Cycle_CPU_Basys3.tcl -notrace
+Command: synth_design -top Single_Cycle_CPU_Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 410.320 ; gain = 96.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_CPU_Basys3' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/ClockDiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (1#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/ClockDiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'KeyClock' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/KeyClock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'KeyClock' (2#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/KeyClock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/LedDisplay.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/LedDisplay.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'LedDisplay' (3#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/LedDisplay.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'presentPC' does not match port width (8) of module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:97]
+WARNING: [Synth 8-689] width (32) of port connection 'nextPC' does not match port width (8) of module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:97]
+WARNING: [Synth 8-689] width (7) of port connection 'RS_Addr' does not match port width (8) of module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:98]
+WARNING: [Synth 8-689] width (32) of port connection 'RS_Data' does not match port width (8) of module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:98]
+WARNING: [Synth 8-689] width (7) of port connection 'RT_Addr' does not match port width (8) of module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:99]
+WARNING: [Synth 8-689] width (32) of port connection 'RT_Data' does not match port width (8) of module 'LedDisplay' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:99]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/CU.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/CU.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (4#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/ALU.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:43]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/RF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_Source' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/PC.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Source' (8#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/PC.v:47]
+WARNING: [Synth 8-350] instance 'pc_source_ins' of module 'PC_Source' requires 6 connections, but only 5 given [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:121]
+INFO: [Synth 8-6157] synthesizing module 'PC_Jumper' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/PC.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Jumper' (9#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/PC.v:66]
+INFO: [Synth 8-6157] synthesizing module 'SZE' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/SZE.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SZE' (10#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/SZE.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IM' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/XILINX/PROJECTS/Single_Cycle_CPU/data/instructions.txt' is read successfully [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'IM' (11#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:23]
+WARNING: [Synth 8-350] instance 'im_ins' of module 'IM' requires 4 connections, but only 3 given [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:127]
+INFO: [Synth 8-6157] synthesizing module 'DM' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:46]
+INFO: [Common 17-14] Message 'Synth 8-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-4767] Trying to implement RAM 'Data_Mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "Data_Mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DM' (12#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/DM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_CPU_Basys3' (13#1) [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/Single_Cycle_CPU_Basys3.v:23]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[31]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[30]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[29]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[28]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[27]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[26]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[25]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[24]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[23]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[22]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[21]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[20]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[19]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[18]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[17]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[16]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[15]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[14]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[13]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[12]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[11]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[10]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[9]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[8]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[7]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[6]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[5]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[4]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[3]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[2]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[1]
+WARNING: [Synth 8-3331] design IM has unconnected port IDataIn[0]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[27]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[26]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[25]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[24]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[23]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[22]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[21]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[20]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[19]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[18]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[17]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[16]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[15]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[14]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[13]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[12]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[11]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[10]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[9]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[8]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[7]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[6]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[5]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[4]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[3]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[2]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[1]
+WARNING: [Synth 8-3331] design PC_Jumper has unconnected port PC4[0]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[31]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[30]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[29]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[28]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[27]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[26]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[25]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[24]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[23]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[22]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[21]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[20]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[19]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[18]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[17]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[16]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[15]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[14]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[13]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[12]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[11]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[10]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[9]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[8]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[7]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[6]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[5]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[4]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[3]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[2]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[1]
+WARNING: [Synth 8-3331] design PC_Source has unconnected port PC_Nouse[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 483.250 ; gain = 169.875
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 483.250 ; gain = 169.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 483.250 ; gain = 169.875
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/constrs_1/new/Single_Cycle_CPU_Basys3.xdc]
+Finished Parsing XDC File [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/constrs_1/new/Single_Cycle_CPU_Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/constrs_1/new/Single_Cycle_CPU_Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Single_Cycle_CPU_Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Single_Cycle_CPU_Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 815.945 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 815.945 ; gain = 502.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 815.945 ; gain = 502.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 815.945 ; gain = 502.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Digital" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ExtSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DBDataSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nWR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCSrc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/ALU.v:44]
+INFO: [Synth 8-5546] ROM "Mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mem" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.srcs/sources_1/new/IM.v:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 815.945 ; gain = 502.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 128   
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  69 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 72    
+	   2 Input      8 Bit        Muxes := 124   
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 123   
+	   4 Input      1 Bit        Muxes := 33    
+	   5 Input      1 Bit        Muxes := 96    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module KeyClock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module LedDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 11    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PC_Source 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module IM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
++---Muxes : 
+	  69 Input      8 Bit        Muxes := 4     
+Module DM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 128   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 72    
+	   2 Input      8 Bit        Muxes := 124   
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 122   
+	   4 Input      1 Bit        Muxes := 32    
+	   5 Input      1 Bit        Muxes := 96    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[31]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[30]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[29]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[28]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[27]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[26]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[25]
+WARNING: [Synth 8-3331] design DM has unconnected port DAddr[24]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[2]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[3]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[4]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[5]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[6]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[7]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[8]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[9]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[10]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[11]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[12]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[13]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[14]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[15]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[16]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[17]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[18]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[19]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[20]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[21]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[22]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[23]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[24]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[25]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[26]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[27]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[28]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[29]' (FD) to 'led_ins/selector_reg[31]'
+INFO: [Synth 8-3886] merging instance 'led_ins/selector_reg[30]' (FD) to 'led_ins/selector_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[31]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[30]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[29]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[28]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[27]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[26]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[25]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[24]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[23]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[22]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[21]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[20]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[19]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[18]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[17]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[16]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[15]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[14]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[13]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[12]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[11]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[10]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[9]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[8]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (pc_ins/IAddr_reg[0]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[7]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[6]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[5]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[4]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[3]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[2]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[1]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[0]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[15]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[14]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[13]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[12]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[11]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[10]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[9]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[8]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[23]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[22]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[21]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[20]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[19]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[18]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[17]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[16]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[31]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[30]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[29]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[28]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[27]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[26]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[25]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+WARNING: [Synth 8-3332] Sequential element (im_ins/IDataOut_reg[24]) is unused and will be removed from module Single_Cycle_CPU_Basys3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 815.945 ; gain = 502.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------+-----------------+-----------+----------------------+---------------+
+|Module Name             | RTL Object      | Inference | Size (Depth x Width) | Primitives    | 
++------------------------+-----------------+-----------+----------------------+---------------+
+|Single_Cycle_CPU_Basys3 | rf_ins/Regs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------------------+-----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 815.945 ; gain = 502.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 817.027 ; gain = 503.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------------------+-----------------+-----------+----------------------+---------------+
+|Module Name             | RTL Object      | Inference | Size (Depth x Width) | Primitives    | 
++------------------------+-----------------+-----------+----------------------+---------------+
+|Single_Cycle_CPU_Basys3 | rf_ins/Regs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------------------+-----------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    30|
+|3     |LUT1   |     8|
+|4     |LUT2   |    76|
+|5     |LUT3   |   572|
+|6     |LUT4   |    99|
+|7     |LUT5   |   214|
+|8     |LUT6   |  1460|
+|9     |MUXF7  |   446|
+|10    |MUXF8  |    14|
+|11    |RAM32M |    12|
+|12    |FDCE   |     7|
+|13    |FDRE   |  1072|
+|14    |FDSE   |     4|
+|15    |IBUF   |     5|
+|16    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+-----------+------+
+|      |Instance        |Module     |Cells |
++------+----------------+-----------+------+
+|1     |top             |           |  4033|
+|2     |  clkdiv_ins    |ClockDiv   |    23|
+|3     |  keyclk_ins    |KeyClock   |     2|
+|4     |  alu_ins       |ALU        |    13|
+|5     |  dm_ins        |DM         |  2800|
+|6     |  led_ins       |LedDisplay |    59|
+|7     |  pc_ins        |PC         |   665|
+|8     |  pc_source_ins |PC_Source  |     2|
+|9     |  rf_ins        |RF         |   449|
++------+----------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 906.906 ; gain = 593.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 177 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 906.906 ; gain = 260.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 906.906 ; gain = 593.531
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 507 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 271 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 906.906 ; gain = 606.352
+INFO: [Common 17-1381] The checkpoint 'D:/XILINX/PROJECTS/Single_Cycle_CPU_Basys3/Single_Cycle_CPU_Basys3.runs/synth_1/Single_Cycle_CPU_Basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Single_Cycle_CPU_Basys3_utilization_synth.rpt -pb Single_Cycle_CPU_Basys3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.054 . Memory (MB): peak = 906.906 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 27 23:02:03 2018...
